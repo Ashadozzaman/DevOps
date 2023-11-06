@@ -1,8 +1,6 @@
-##It's Linux First Class
--linux introduction
--advantage of linux
--setup linux
-```
-How to use linux, how to setup ubuntu.
-Install VMware
-```
+## It's Linux First Class
+- Linux introduction
+- Advantage of Linux
+- Setup Linux
+- How to use Linux, how to set up Ubuntu.
+- Install VMware

@@ -1,6 +1,6 @@
 ## Ubuntu Linux Installation
-- How to check.
-1 Displays detailed system information, including the kernel version. 
+##### Bellow shows some Linux commands with a description.
+1. Displays detailed system information, including the kernel version. 
 ```
 $uname -a
 ```
@@ -20,7 +20,6 @@ $uname -m
 
 4. Shows the bit-width of the system.
 ```
-getconf LONG_BIT
+$getconf LONG_BIT
 ```
-
 `Output:- 64`

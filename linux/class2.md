@@ -1,6 +1,6 @@
 ## Ubuntu Linux Installation
 - How to check.
-##### Displays detailed system information, including the kernel version. 
+1 Displays detailed system information, including the kernel version. 
 ```
 $uname -a
 ```
@@ -11,13 +11,16 @@ $uname -a
 $uname -a
 ```
 `Output:- x86_64`
+
 3. Displays the machine or system type.
 ```
 $uname -m
 ```
 `Output:- x86_64`
-4.Shows the bit-width of the system..
+
+4. Shows the bit-width of the system.
 ```
 getconf LONG_BIT
 ```
+
 `Output:- 64`

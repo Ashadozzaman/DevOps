@@ -123,3 +123,10 @@ $ mv old_file.txt new_file.txt
 $ mv old_directory/ new_location/new_directory/
 
 ```
+19. Display the content of a file
+
+```
+$ cat readfile.txt
+```
+`cat command use for read any file in terminal`
+

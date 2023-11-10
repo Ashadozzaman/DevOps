@@ -67,10 +67,10 @@ It seems like you meant to refer to the grep command, which is a powerful tool f
 ```
 $ grep 'monitor' class3.md
 ```
-- This will show full sentence with bold searching(`monitor`) word.
+- This will show full sentences with bold searching(`monitor`) words.
 
 ```
-$ grep - n 'monitor' class3.md
+$ grep -n 'monitor' class3.md
 ```
 - This will show the lines containing "monitor" along with their corresponding line numbers.
 
@@ -78,7 +78,7 @@ $ grep - n 'monitor' class3.md
 $ grep -n -A 1 -B 2 'monitor' class3.md
 ```
 - `-n` will show line number
-- `-A` 1 will show 1 lines after the matching line.
+- `-A` 1 will show 1 line after the matching line.
 - `-B` 2 will show 2 lines before the matching line.
 
 ```

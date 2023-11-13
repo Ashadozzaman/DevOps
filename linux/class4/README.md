@@ -158,7 +158,7 @@ Note: We can give permission to user or group using these binary number or words
 - `d` -Directory indicator
 - `rwx` -User have read,write,execute permission
 - `r-x` -Group have read,-,execute permission
-- `r-x` -Others have read,write,execute permission
+- `r-x` -Others have read,-,execute permission
 ###### Full Binary Permission is:- (rwx = 4+2+1) = 7, (r-x = 4+0+1) = 5,(r-x = 4+0+1) = 5 => `755`
 - `2` Hard link
 - `root` - 1st root is user

@@ -179,3 +179,47 @@ Note: We can give permission to user or group using these binary number or words
 - `0` - File size
 - `Nov 13 18:32` - Last Modify Date
 - `text.txt` - file
+
+### Change dir/file owner
+```
+sudo chown -R ashadozzaman:root test.txt
+```
+- Change test.txt file owner root to ashadozzaman
+```
+ sudo chmod -R 444 text.txt
+```
+- Change file permission, given only read permission all 3 types user.
+```
+sudo chmod u+w text.txt 
+```
+- Change permission to symble
+- User have write permission in text.txt file
+- Output: `-rw-r--r--  1 ashadozzaman root   49 Nov 14 05:10 text.txt`
+```
+sudo chmod g+w+x text/txt
+```
+- Group user permited write and execute.
+#### Creating a Soft Link/Symbolic Link
+In Linux, a symbolic link, often referred to as a `soft link`or "`symlink`," is a file that contains a reference to another file or directory. Symbolic links are similar to shortcuts in Windows or aliases in macOS. 
+```
+ln -s /path/to/target /path/to/link
+```
+```
+sudo ln -s /etc/nginx/sites-available/shovoua.com /etc/nginx/sites-enabled/
+```
+- Create soft link
+```
+rm /etc/nginx/sites-enabled/shovoua.com
+```
+- Remove soft link
+
+```
+readlink ../sites-enabled/shovoua.com
+```
+- If you want to know what a `soft link` point.
+### Important Points:
+- Symbolic links can point to files or directories.
+- They can span file systems and partitions.
+- If you move or delete the target file, the symbolic link becomes broken.
+- Symbolic links can be used for various purposes, such as providing a generic name for a specific version of a program, creating shortcuts, or organizing files.
+

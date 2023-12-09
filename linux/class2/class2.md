@@ -61,6 +61,7 @@ $ pwd
 10. Create a new directory.
 ```
 $ mkdir class3
+$ mkdir dir1 dir2 //create multiple directories
 $ ls
 ```
 `Output:- Enter ls, show new dir`
@@ -83,9 +84,11 @@ $ ls
 13. Remove files or directories.
 ```
 $ rm new-file.txt
+rm -rf /path/to/directory //delete force
 $ ls
 ```
 `Output:- Enter ls, remove new-file.txt file`
+- you can use the `rm` command with the `-r` (recursive) and `-f` (force) options
 
 14. Copy the file and directorate.
 ```

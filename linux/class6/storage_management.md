@@ -110,6 +110,11 @@ Check block device ID\
 `sudo blkid /dev/sdb1`
 
 
+## Full Setup Step By Step
+
+`lsblk` => `df -h` => `sudo cfdisk /dev/sdc` => `lsblk` => `sudo pvdisplay` => `sudo pvcreate /dev/sdb1` => `sudo pvdisplay` => `sudo vgdisplay` => `sudo vgextend vg0 /dev/sdb1` => `sudo lvextend -L +2G /dev/vg0/lv-1` => `sudo resize2fs /dev/vg0/lv-1`
+
+
 **Configure systems to mount file systems at or during boot**
 
 ```
@@ -166,7 +171,3 @@ The line in auto.master tells autofs to use the configuration in auto.shares and
 When you access /shares/mynetworkshare on your local machine, autofs will automatically mount the NFS share from the specified server and path (172.17.17.210:/var/k8-nfs/data), making the contents of that remote directory accessible on your local system.\
 In summary, /shares is the local mount point, /var/k8-nfs/data is the remote directory on the NFS server, and mynetworkshare is the label or name assigned to this particular NFS share configuration.
 
-
-## Full Setup Step By Step
-
-`lsblk` => `df -h` => `sudo cfdisk /dev/sdc` => `lsblk` => `sudo pvdisplay` => `sudo pvcreate /dev/sdb1` => `sudo pvdisplay` => `sudo vgdisplay` => `sudo vgextend vg0 /dev/sdb1` => `sudo lvextend -L +2G /dev/vg0/lv-1` => `sudo resize2fs /dev/vg0/lv-1`

@@ -86,10 +86,10 @@ STRONG Length >= 8, numeric, mixed case, special characters and dictionary      
 
 Please enter 0 = LOW, 1 = MEDIUM and 2 = STRONG:
  2
+
+Note: If you use 2,3 need strong password.
 ```
-
 Regardless of whether you choose to set up the Validate Password Plugin, the next prompt will be to set a password for the MySQL root user. Enter and then confirm a secure password of your choice:
-
 ```
 Output
 Please set the password for root here.
@@ -140,17 +140,105 @@ mysql -u root -p
 ```
 
 Once you have access to the MySQL prompt, you can create a new user with a CREATE USER statement. These follow this general syntax:
+
 ```
-CREATE USER 'username'@'host' IDENTIFIED WITH authentication_plugin BY 'password?11';
+CREATE USER 'ashadozzaman'@'localhost' IDENTIFIED WITH authentication_plugin BY 'password';
 ```
+
 Note: If you face error like:-
 ```
 ERROR 1524 (HY000): Plugin 'authentication_plugin' is not loaded
 ```
+
 ### Check Available Plugins
 ```
 SHOW PLUGINS;
 ```
+
+After `CREATE USER`, you specify a username. This is immediately followed by an `@` sign and then the hostname from which this user will connect. If you only plan to access this user locally from your Ubuntu server, you can specify `localhost`. Wrapping both the username and host in single quotes isn’t always necessary, but doing so can help to prevent errors.
+
+You have several options when it comes to choosing your user’s authentication plugin. The `auth_socket` plugin mentioned previously can be convenient, as it provides strong security without requiring valid users to enter a password to access the database. But it also prevents remote connections, which can complicate things when external programs need to interact with MySQL.
+
+As an alternative, you can leave out the WITH `authentication_plugin` portion of the syntax entirely to have the user authenticate with MySQL’s default plugin, `caching_sha2_password`. The MySQL documentation recommends this plugin for users who want to log in with a password due to its strong security features.
+
+Run the following command to create a user that authenticates with `caching_sha2_password`. Be sure to change `ashadozzaman` to your preferred username and `password` to a strong password of your choosing.
+
+```
+CREATE USER 'ashadozzaman'@'localhost' IDENTIFIED BY 'password';
+```
+`Note`: There is a known issue with some versions of PHP that causes problems with `caching_sha2_password`. If you plan to use this database with a PHP application — phpMyAdmin, for example — you may want to create a user that will authenticate with the older, though still secure, `mysql_native_password` plugin instead.
+```
+CREATE USER 'ashadozzaman'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```
+If you aren’t sure, you can always create a user that authenticates with `caching_sha2_plugin` and then `ALTER` it later on with this command.
+```
+ALTER USER 'ashadozzaman'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```
+
+***After creating your new user, you can grant them the appropriate privileges. The general syntax for granting user privileges is as follows:***
+
+```
+GRANT PRIVILEGE ON database.table TO 'username'@'host';
+```
+The `PRIVILEGE` value in this example syntax defines what actions the user is allowed to perform on the specified `database` and `table`. You can grant multiple privileges to the same user in one command by separating each with a comma. You can also grant a user privileges globally by entering asterisks (*) in place of the database and table names. In SQL, asterisks are special characters used to represent “all” databases or tables.
+
+To illustrate, the following command grants a user global privileges to `CREATE`, `ALTER`, and `DROP` databases, tables, and users, as well as the power to INSERT, UPDATE, and DELETE data from any table on the server. It also grants the user the ability to query data with `SELECT`, `create` foreign keys with the `REFERENCES` keyword, and perform FLUSH operations with the RELOAD privilege. However, you should only grant users the permissions they need, so feel free to adjust your own user’s privileges as necessary.
+
+You can find the full list of available privileges in the official MySQL documentation.
+
+Run this `GRANT` statement, replacing `ashadozzaman` with your own MySQL user’s name, to `grant` these privileges to your user:
+
+```
+GRANT CREATE, ALTER, DROP, INSERT, UPDATE, INDEX, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'ashadozzaman'@'localhost' WITH GRANT OPTION;
+```
+Note that this statement also includes `WITH GRANT OPTION`. This will allow your MySQL user to grant any permissions that it has to other users on the system.
+
+Warning: Some users may want to grant their MySQL user the ALL PRIVILEGES privilege, which will provide them with broad superuser privileges akin to the root user’s privileges, like so:
+```
+GRANT ALL PRIVILEGES ON *.* TO 'ashadozzaman'@'localhost' WITH GRANT OPTION;
+```
+Such broad privileges should not be granted lightly, as anyone with access to this MySQL user will have complete control over every database on the server.
+
+Following this, it’s good practice to run the `FLUSH PRIVILEGES` command. This will free up any memory that the server cached as a result of the preceding CREATE `USER` and `GRANT` statements:
+```
+FLUSH PRIVILEGES;
+exit
+```
+In the future, to log in as your new MySQL user, you’d use a command like the following:
+```
+mysql -u ashadozzaman -p
+```
+The `-p `flag will cause the MySQL client to prompt you for your MySQL user’s password in order to authenticate.
+
+#### Finally, let’s test the MySQL installation.
+
+## Step 4 — Testing MySQL
+```
+systemctl status mysql.service
+```
+- Output  Should running
+- If MySQL isn’t running, you can start it with `sudo systemctl start mysql`.
+
+For an additional check, you can try connecting to the database using the `mysqladmin` tool, which is a client that lets you run administrative commands. For example, this command says to connect as a MySQL user named `ashadozzman` (-u `ashadozzman`), prompt for a password (-p), and return the version. Be sure to change `ashadozzman` to the name of your dedicated MySQL user, and enter that user’s password when prompted:
+
+```
+sudo mysqladmin -p -u ashadozzaman version
+```
+``
+Output
+mysqladmin  Ver 8.0.28-0ubuntu4 for Linux on x86_64 ((Ubuntu))
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+``
+## Conclusion
+You now have a basic MySQL setup installed on your server. Here are a few examples of next steps you can take:
+
+[Set up a LAMP stack](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-22-04) 
+
+[Manage your MySQL installation with phpMyAdmin](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-22-04)
+
+# **All Done!!!!!!!!! 🚀💥**
+
+
 
 
 

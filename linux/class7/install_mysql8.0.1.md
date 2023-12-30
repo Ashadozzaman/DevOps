@@ -229,6 +229,13 @@ Output
 mysqladmin  Ver 8.0.28-0ubuntu4 for Linux on x86_64 ((Ubuntu))
 Copyright (c) 2000, 2022, Oracle and/or its affiliates.
 ``
+
+## Step 4 - Install MySQL Workbench
+Now, we are all set to proceed with the MySQL Workbench installation on Ubuntu 22.04. To initiate the installation process, execute the below-provided command
+```
+sudo snap install mysql-workbench-community
+```
+After Complete process, click on the “Show Apps” icon, search for the “MySQL Workbench” in the search menu, and click on the desired app to launch it
 ## Conclusion
 You now have a basic MySQL setup installed on your server. Here are a few examples of next steps you can take:
 

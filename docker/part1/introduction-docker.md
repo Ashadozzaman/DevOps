@@ -59,6 +59,7 @@ Docker containers can be orchestrated and managed using tools like Docker Compos
 Virtual machines is that virtual machines virtualize an entire machine down to
 the hardware layers and containers only virtualize software layers above the
 operating system level.
+
 <img src="../images/containerVsVM.png">
 
 ## How is it done?

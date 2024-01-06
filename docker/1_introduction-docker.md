@@ -52,7 +52,7 @@ Because containers share the host OS kernel, they use fewer resources compared t
 Docker containers are managed by the Docker Engine, which is a client-server application. The Docker Engine consists of a daemon process (the server) and a command-line interface (the client). The client communicates with the daemon to build, run, and manage containers.
 6. Orchestration:
 Docker containers can be orchestrated and managed using tools like Docker Compose or Kubernetes. These tools enable the deployment, scaling, and management of multi-container applications.
-<img src="../images/container.png">
+<img src="images/container.png">
 
 ## Containers vs Virtual Machines
 

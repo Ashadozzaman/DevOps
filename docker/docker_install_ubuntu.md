@@ -2,7 +2,6 @@
 # 🚀How To Install and Use Docker on Ubuntu 22.04🚀
 
 
-
 ## Install Docker Engine on Ubuntu 22.04Lts [Reference](https://docs.docker.com/engine/install/ubuntu/)
 
 **Install using the apt repository**
@@ -25,10 +24,25 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 ```
+Note: If you use an Ubuntu derivative distro, such as Linux Mint, you may need to use `UBUNTU_CODENAME` instead of `VERSION_CODENAME`
 
 3. Install the Docker packages.
 
-`sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+```
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+#### Specific version 
+To install a specific version of Docker Engine, start by listing the available versions in the repository:
+```
+# List the available versions:
+apt-cache madison docker-ce | awk '{ print $3 }'
+
+5:24.0.0-1~ubuntu.22.04~jammy
+5:23.0.6-1~ubuntu.22.04~jammy
+...
+```
+
 
 4. Verify that the Docker Engine installation is successful by running the hello-world image.
 
@@ -70,4 +84,4 @@ sudo rm -rf /var/lib/docker
 sudo rm -rf /var/lib/containerd
 ```
 
-🎉🎉🎉 Congratulations!!! 🎉🎉🎉
+🎉🎉🎉 Congratulations!!! It's Done 🎉🎉🎉

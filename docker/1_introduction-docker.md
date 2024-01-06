@@ -1,7 +1,7 @@
 # Docker Certified Associate (DCA) Course
 
-## Docker Histrory
-Docker Inc: Solomon Hykes created Docker in 2013 at dotCloud, a cloud hosting
+## Docker History
+Docker Inc: Solomon Hykes created Docker in 2013 at dotCloud, a cloud-hosting
 company.
 
 Initially using LXC as its default execution environment & Docker quickly
@@ -17,8 +17,8 @@ Dockerization offers several advantages over traditional approaches such as
 using virtual machines (VMs) or bare-metal servers.
 
 1. Containerize Applications
-    - Packeage wize customization
-2. Run each service with its own dependencies in separate containers
+    - Package wise customization
+2. Run each service with its dependencies in separate containers
 3. Consistent & Isolated Environment
 4. Rapid Application Deployment
 5. Ensures Scalability & Flexibility
@@ -28,18 +28,18 @@ using virtual machines (VMs) or bare-metal servers.
 7. Better Portability
 8. Cost-Effective
 9. In-Built Version Control System
-    - Easily version Control
+    - Easily Version Control
 10. Resource Utilization:
 11. Security
 
-`NSible` - Infrastucere as a code. Update multiple server.
+`NSible` - Infrastucere as a code. Update multiple servers.
 
 ## What are containers?
 A container is a unit of software that packages code and its dependencies so the application runs quickly and reliably across computing environments.
 
 Docker containers are lightweight, standalone, and executable packages that contain all the necessary components to run a piece of software, including the code, runtime, libraries, system tools, and settings. Containers are based on containerization technology, and Docker is one of the most popular containerization platforms.
 
-Here are key characteristics and components of Docker containers:
+Here are the key characteristics and components of Docker containers:
 1. Isolation
 Containers provide process and file system isolation. Each container runs in its own user space, separate from the host and other containers. This isolation ensures that applications and dependencies do not interfere with each other
 2. Portability
@@ -60,7 +60,7 @@ Virtual machines is that virtual machines virtualize an entire machine down to
 the hardware layers and containers only virtualize software layers above the
 operating system level.
 
-<img src="../images/containerVsVM.png">
+<img src="images/containerVsVM.png">
 
 ## How is it done?
 
@@ -71,8 +71,8 @@ images to the registry (given adequate access permissions when applicable).
 ### DockerHub
 DockerHub is a hosted registry solution by Docker Inc. Besides public and
 private repositories, it also provides automated builds, organization
-accounts, and integration with source control solutions like Github and
-Bitbucket .
+accounts, and integration with source control solutions like GitHub and
+Bitbucket.
 
 ### Their Public Registries
 Amazon Elastic Container Registry (ECR)
@@ -86,10 +86,10 @@ teams looking to get started with Docker and experimenting with
 container-based apps.
 
 2. Docker Engine Enterprise: Designed for enterprise development of a
-container runtime with security and an enterprise grade SLA in mind.
+container runtime with security and an enterprise-grade SLA in mind.
 
 3. Docker Enterprise: Designed for enterprise development and IT teams who
-build, ship, and run business critical applications in production at scale.
+build, ship, and run business-critical applications in production at scale.
 
 [Ref Link]
 
@@ -102,6 +102,6 @@ code.
 
 Containers: Containers offer a lightweight and efficient way to package and run applications, it's provide a consistent and isolated environment.
 
-<img src="../images/DockerfileImageContainer.png">
+<img src="images/DockerfileImageContainer.png">
 
 ### Install Docker Engine on Ubuntu Click  <a href="./docker_install_ubuntu.md">Here</a>

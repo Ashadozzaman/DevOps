@@ -133,7 +133,7 @@ Amazon `EC2` is a web service that provides resizable compute capacity in the cl
 AWS `Lambda` is a serverless computing service that lets you run your code without provisioning or managing servers. You can execute code in response to events, such as changes to data in an Amazon `S3` bucket, updates to a DynamoDB table, or HTTP requests via API Gateway.
 #### Recognition (Assuming Amazon Rekognition):
 
-Amazon `Rekognition` is a service for image and video analysis. It provides APIs for facial recognition, object detection, scene understanding, and other computer vision tasks. It's commonly used for applications involving image and video analysis, such as building smart applications that can automatically recognize and understand visual content.
+Amazon `Recognition` is a service for image and video analysis. It provides APIs for facial recognition, object detection, scene understanding, and other computer vision tasks. It's commonly used for applications involving image and video analysis, such as building smart applications that can automatically recognize and understand visual content.
 
 
 

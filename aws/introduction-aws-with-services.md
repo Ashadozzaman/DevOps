@@ -108,6 +108,8 @@ Availability Zone Example bellow show:-
   </tr>
 </table>
 
+### Global Service
+
 #### IAM (Identity and Access Management):
 
 `IAM` is a web service for securely controlling access to AWS resources. It allows you to create and manage AWS users and groups and use permissions to allow and deny their access to AWS resources.
@@ -119,7 +121,10 @@ Availability Zone Example bellow show:-
 Amazon `CloudFront` is a content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency and high transfer speeds. It integrates with other Amazon Web Services products to give developers and businesses an easy way to distribute content to end-users.
 #### WAF (Web Application Firewall):
 
+### Regional Service
+
 AWS `WAF` is a web application firewall that helps protect web applications from common web exploits that could affect application availability, compromise security, or consume excessive resources.
+
 #### EC2 (Elastic Compute Cloud):
 
 Amazon `EC2` is a web service that provides resizable compute capacity in the cloud. It allows users to run virtual servers, known as "instances," on-demand. `EC2` instances can be used for a wide range of applications, including hosting websites, running applications, and processing data.
@@ -128,7 +133,7 @@ Amazon `EC2` is a web service that provides resizable compute capacity in the cl
 AWS `Lambda` is a serverless computing service that lets you run your code without provisioning or managing servers. You can execute code in response to events, such as changes to data in an Amazon `S3` bucket, updates to a DynamoDB table, or HTTP requests via API Gateway.
 #### Recognition (Assuming Amazon Rekognition):
 
-Amazon `Rekognition` is a service for image and video analysis. It provides APIs for facial recognition, object detection, scene understanding, and other computer vision tasks. It's commonly used for applications involving image and video analysis, such as building smart applications that can automatically recognize and understand visual content.
+Amazon `Recognition` is a service for image and video analysis. It provides APIs for facial recognition, object detection, scene understanding, and other computer vision tasks. It's commonly used for applications involving image and video analysis, such as building smart applications that can automatically recognize and understand visual content.
 
 
 

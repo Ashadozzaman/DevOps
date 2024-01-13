@@ -21,5 +21,4 @@
 - <a target="_blank" href="IAM.md#iam-policies">IAM Policies</a>
 - <a target="_blank" href="IAM.md#iam-security">IAM Security</a>
 
-
-### <a target="_blank" href="introduction-aws-with-services.md"> <h3> EC2(Elastic Compute Cloud)</a>
+### <a target="_blank" href="EC2.md"> <h3> EC2(Elastic Compute Cloud)</a>

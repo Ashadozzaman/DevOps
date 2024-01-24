@@ -22,3 +22,18 @@
 - <a target="_blank" href="IAM.md#iam-security">IAM Security</a>
 
 ### <a target="_blank" href="EC2.md"> <h3> EC2(Elastic Compute Cloud)</a>
+
+## Module 6 (RDS, Aurora Elasticache)
+
+### <a target="_blank" href="./topics/RDS.md"> <h3> AWS RDS - Relational Database Service </a>
+- <a target="_blank" href="./topics/RDS.md#benefits-of-using-rds">Benefits Of Using RDS</a>
+- <a target="_blank" href="./topics/RDS.md#autoscaling-on-rds">Autoscaling On RDS</a>
+- <a target="_blank" href="./topics/RDS.md#rds-multi-az-disaster-recovery">RDS Multi AZ (Disaster Recovery)</a>
+- <a target="_blank" href="./topics/RDS.md#rds-custom">RDS Custome</a>
+- <a target="_blank" href="./topics/RDS.md#amazon-aurora">Amazon Aurora</a>
+- <a target="_blank" href="./topics/RDS.md#aurora-high-availability">Aurora High Availability</a>
+- <a target="_blank" href="./topics/RDS.md#rds-backup">RDS backup</a>
+- <a target="_blank" href="./topics/RDS.md#rds--aurora-backup-restore-options">RDS & Aurora backup restore options</a>
+- <a target="_blank" href="./topics/RDS.md#rds-and-aurora-security">RDS and Aurora Security</a>
+- <a target="_blank" href="./topics/RDS.md#amazon-elasticache">Amazon Elasticache</a>
+- <a target="_blank" href="./topics/RDS.md#redis-vs-memcached">Redis vs MemCached</a>

@@ -3,6 +3,7 @@
 ## Table Of Content
 
 ### <a target="_blank" href="introduction-aws-with-services.md">Introduction Of AWS(Amazon Web Service) </a>
+
 - <a target="_blank" href="introduction-aws-with-services.md"> Amazon Web Services - Cloud provider </a>
 - <a target="_blank" href="introduction-aws-with-services.md"> How to create AWS Account </a>
 - <a target="_blank" href="introduction-aws-with-services.md"> AWS Global Infrastructure </a>
@@ -11,6 +12,7 @@
 - <a target="_blank" href="introduction-aws-with-services.md"> AWS Global And Regional Services </a>
 
 ### <a target="_blank" href="IAM.md">IAM (Identity And Access Management)</a>
+
 - <a target="_blank" href="IAM.md#what-is-iam">What is IAM </a>
 - <a target="_blank" href="IAM.md#permissions-and-policies"> Permissions And Policies</a>
 - <a target="_blank" href="IAM.md#iam-demo">I AM DEMO</a>
@@ -26,6 +28,7 @@
 ## Module 6 (RDS, Aurora Elasticache)
 
 ### <a target="_blank" href="./topics/RDS.md"> <h3> AWS RDS - Relational Database Service </a>
+
 - <a target="_blank" href="./topics/RDS.md#benefits-of-using-rds">Benefits Of Using RDS</a>
 - <a target="_blank" href="./topics/RDS.md#autoscaling-on-rds">Autoscaling On RDS</a>
 - <a target="_blank" href="./topics/RDS.md#rds-multi-az-disaster-recovery">RDS Multi AZ (Disaster Recovery)</a>
@@ -37,3 +40,21 @@
 - <a target="_blank" href="./topics/RDS.md#rds-and-aurora-security">RDS and Aurora Security</a>
 - <a target="_blank" href="./topics/RDS.md#amazon-elasticache">Amazon Elasticache</a>
 - <a target="_blank" href="./topics/RDS.md#redis-vs-memcached">Redis vs MemCached</a>
+
+## Module 7 (Route 53)
+
+### <a target="_blank" href="./topics/Route53.md"> <h3> Route-53 </a>
+
+- <a target="_blank" href="./topics/Route53.md#what-is-a-dns">What is a DNS?</a>
+- <a target="_blank" href="./topics/Route53.md#key-functions-of-dns">Key Functions of DNS</a>
+- <a target="_blank" href="./topics/Route53.md#amazon-route-53">Amazon Route 53</a>
+- <a target="_blank" href="./topics/Route53.md#route-53-record-types">Route 53 record types</a>
+- <a target="_blank" href="./topics/Route53.md#route-53-hosted-zonesoute">Hosted zones</a>
+- <a target="_blank" href="./topics/Route53.md#route-53---ttl-time-to-live">TTL (Time TO Live)</a>
+- <a target="_blank" href="./topics/Route53.md#cname--alias-records">CNAME & ALIAS Records</a>
+- <a target="_blank" href="./topics/Route53.md#alias-records">Alias Records</a>
+- <a target="_blank" href="./topics/Route53.md#routing-policies-for-route-53">Routing policies for Route 53</a>
+- <a target="_blank" href="./topics/Route53.md#routing-policy---latency">Routing policy - Latency</a>
+- <a target="_blank" href="./topics/Route53.md#routing-policy---geolocation">Geolocation</a>
+- <a target="_blank" href="./topics/Route53.md#routing-policy---geoproximity">Geoproximity</a>
+- <a target="_blank" href="./topics/Route53.md#instantiating-applications-quickly">Instantiating Applications quickly</a>

@@ -20,4 +20,4 @@ CMD ["python", "app.py"]
 `docker run ashadozzaman/hello-python:0.0.1`
 
 
-## `With project detais click` [Here](https://github.com/Ashadozzaman/docker-images/tree/main/python)
+## `With project details click` [Here](https://github.com/Ashadozzaman/docker-images/tree/main/python)

@@ -461,7 +461,7 @@ README.md
 # Exclude the .git file
 .git
 ```
-Complete Example is [Here](https://github.com/nasirnjs/docker-static-site)
+Complete Example is [Here](https://github.com/Ashadozzaman/docker-images/tree/main/static-login-page-dockerize)
 
 ## Docker Args & Environment Variables
 
@@ -474,7 +474,7 @@ You can pass ENV variables not only during the image building but also at runtim
 ENV can also have a default value in the dockerfile and you can override ENV values.
 
 ### Dockerize Nodejs
-[Here](https://github.com/nasirnjs/docker-nodejs-env) is a Nodejs app ENV Example.
+[Here](https://github.com/Ashadozzaman/docker-images/tree/main/nodejs-docker-with-env) is a Nodejs app ENV Example.
 
 
 ## Docker volume:

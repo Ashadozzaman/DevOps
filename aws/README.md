@@ -27,7 +27,7 @@
 
 ## Module 6 (RDS, Aurora Elasticache)
 
-### <a target="_blank" href="./topics/RDS.md"> <h3> AWS RDS - Relational Database Service </a>
+### <a target="_blank" href="./topics/RDS.md">  AWS RDS - Relational Database Service  </a>
 
 - <a target="_blank" href="./topics/RDS.md#benefits-of-using-rds">Benefits Of Using RDS</a>
 - <a target="_blank" href="./topics/RDS.md#autoscaling-on-rds">Autoscaling On RDS</a>
@@ -43,7 +43,7 @@
 
 ## Module 7 (Route 53)
 
-### <a target="_blank" href="./topics/Route53.md"> <h3> Route-53 </a>
+### <a target="_blank" href="./topics/Route53.md">  Route-53 </a>
 
 - <a target="_blank" href="./topics/Route53.md#what-is-a-dns">What is a DNS?</a>
 - <a target="_blank" href="./topics/Route53.md#key-functions-of-dns">Key Functions of DNS</a>
@@ -58,3 +58,13 @@
 - <a target="_blank" href="./topics/Route53.md#routing-policy---geolocation">Geolocation</a>
 - <a target="_blank" href="./topics/Route53.md#routing-policy---geoproximity">Geoproximity</a>
 - <a target="_blank" href="./topics/Route53.md#instantiating-applications-quickly">Instantiating Applications quickly</a>
+
+## Module 8 (Amazon S3)
+
+### <a target="_blank" href="./topics/AmazonS3.md"> Amazon S3 </a>
+- <a target="_blank" href="./topics/AmazonS3.md#amazon-s3---introduction">Introduction</a>
+- <a target="_blank" href="./topics/AmazonS3.md#s3---buckets"> S3 - Buckets</a>
+- <a target="_blank" href="./topics/AmazonS3.md#s3---objects"> S3 - Objects</a>
+- <a target="_blank" href="./topics/AmazonS3.md#s3-security"> S3 - Security</a>
+- <a target="_blank" href="./topics/AmazonS3.md#s3-bucket-policy"> S3 Bucket Policy </a>
+

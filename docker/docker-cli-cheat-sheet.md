@@ -327,13 +327,15 @@ Docker CLI configuration settings, including authentication credentials for Dock
  Display information about disk usage related to Docker.\
  `docker system df`
 
+We also use token to access docker registry
+
 
 ## Docker Image Layer
 In Docker, images are composed of multiple layers. A docker container image is created using a dockerfile. Every line in a dockerfile will create a layer.\
 If you make changes to your Dockerfile and rebuild the image, Docker can reuse cached layers to speed up the process, only rebuilding the layers affected by the changes.  Caching plays a significant role in optimizing the build process.\
 Let's explore both concepts with examples:
 
-Build Docker Image form [Here](https://github.com/ashadozzaman/docker-static-site)
+Build Docker Image form [Here](https://github.com/nasirnjs/docker-static-site)
 
 list of `nginx` image layer.\
 `docker image inspect nginx -f '{{.RootFS.Layers}}' | awk -F' ' '{for (i=1; i<=NF; i++) print $i}'`
@@ -370,9 +372,9 @@ You can write Docker CMD/ENTRYPOINT instructions in both forms:
 - ENTRYPOINT echo "Hello World" (shell form)
 - ENTRYPOINT ["echo", "Hello World"] (exec form)
 
-**Docker CMD**
+### Docker CMD
 - Whenever we want to override executable while running the container, use `CMD`.
-- We can override the value with a command-line argument.
+- `We can override the value with a command-line argument`.
 - We can multiple CMD in a single docker file but only one will be executable while the container start.
 
 Let’s see an example.\
@@ -391,7 +393,7 @@ Build and run the docker file.\
 
 *In a Dockerfile, only the last CMD instruction is effective. If there are multiple CMD instructions, the last one will override the previous ones.*
 
-**Docker Entrypoint**
+### Docker Entrypoint
 - Just like with CMD, you need to specify a command and parameters.
 - You cannot override the ENTRYPOINT instruction by adding command-line parameters to the docker run command.
 
@@ -412,7 +414,7 @@ It worked the same as CMD but when we have passed parameters will be see differe
 
 *we have passed parameters but the executable hasn’t overridden and also added a new parameter with the old parameter.*
 
-**Now, let’s see how to use CMD and Entrypoint together.**
+### Now, let’s see how to use CMD and Entrypoint together. 
 
 Modify our existing Dockerfile so it includes both `CMD & ENTRYPOINT`instructions.
 ```bash
@@ -432,7 +434,7 @@ Let's pass parameters to the docker run command.\
 
 *The output has now changed to `Hello Bangladesh`*\
 
-**Conclusion**
+### Conclusion
 - Whenever there is a chance of overriding executable while running the container using CMD otherwise uses ENTRYPOINT.
 - Sometimes we don’t have to override the executable all we want to run the container, in that case, ENTRYPOINT is the best use case.
 - If ENTRYPOINT is used for the executable, we can use CMD to pass default parameters. In that case, we use both together.
@@ -459,7 +461,7 @@ README.md
 # Exclude the .git file
 .git
 ```
-Complete Example is [Here](https://github.com/ashadozzaman/docker-static-site)
+Complete Example is [Here](https://github.com/nasirnjs/docker-static-site)
 
 ## Docker Args & Environment Variables
 
@@ -471,7 +473,8 @@ Default values can be specified for ARG parameters in the Dockerfile, and they c
 You can pass ENV variables not only during the image building but also at runtime when your containers are running.
 ENV can also have a default value in the dockerfile and you can override ENV values.
 
-[Here](https://github.com/ashadozzaman/docker-nodejs-env) is a Nodejs app ENV Example.
+### Dockerize Nodejs
+[Here](https://github.com/nasirnjs/docker-nodejs-env) is a Nodejs app ENV Example.
 
 
 ## Docker volume:

@@ -51,4 +51,4 @@ docker run -p 8080:80 php8-hello-world
 
 Now, try accessing your PHP script at http://localhost:8080. If you encounter any further issues, let me know, and we can troubleshoot further.
 
-## `With project detais click` [Here](https://github.com/Ashadozzaman/docker-images/tree/main/php)
+## `With project details click` [Here](https://github.com/Ashadozzaman/docker-images/tree/main/php)

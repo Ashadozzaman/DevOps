@@ -18,3 +18,6 @@ CMD ["python", "app.py"]
 **Steps 3** Build and run docker image.\
 `docker build -t ashadozzaman/hello-python:0.0.1 .`\
 `docker run ashadozzaman/hello-python:0.0.1`
+
+
+## `With project detais click` [Here](https://github.com/Ashadozzaman/docker-images/tree/main/python)

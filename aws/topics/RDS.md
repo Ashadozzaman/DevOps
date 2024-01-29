@@ -142,7 +142,7 @@ Gives us capability to configure os and database customization
 
 ## Aurora High Availability
 
-- `Stores 6 Copies of Your Data Across 3 AZ`: Aurora replicates your data across multiple Availability Zones (AZs) for high availability. Each 10GB segment of your database volume is replicated six ways across three AZs.
+- `Stores 6 Copies of Your Data Across 3 AZ`: Aurora replicates your data across multiple Availability Zones (AZs) for high availability. Each 10GB segment of your database volume is `replicated six ` ways across `three AZs`.
     - `4 Copies Out of 6 is Needed for Writes`: Aurora is designed to maintain high durability and availability. For write operations to proceed, a quorum of four copies out of the six must be available. This ensures data consistency and fault tolerance.
     - `3 Copies Out of 6 is Needed for Read`: For read operations, Aurora requires a quorum of three copies out of the six to be available. This allows for distributed and scalable read access across multiple instances.
 

@@ -1,16 +1,17 @@
 # Docker Certified Associate (DCA) Course
 
 ## Docker History
-Docker Inc: Solomon Hykes created Docker in 2013 at dotCloud, a cloud-hosting
-company.
+#### Here's a brief history of Docker:
 
-Initially using LXC as its default execution environment & Docker quickly
-gained popularity.
+`2013:` Docker was created by Solomon Hykes at dotCloud, a cloud-hosting company. It started as an internal project to improve the development and deployment process.
 
-In March 2014, Docker open-sourced its technology, becoming a standout
-project on GitHub.
+`2013-2014:` Docker gained rapid popularity due to its innovative approach to containerization. Initially, Docker used LXC (Linux Containers) as its default execution environment.
 
-Docker is written in the Go programming language.
+`March 2014: `Docker was open-sourced, making it accessible to a wider community of developers. This move contributed significantly to its growth and adoption.
+
+`Technology:` Docker is primarily written in the Go programming language, which is known for its efficiency and concurrency support. This choice of language has helped Docker to be lightweight and efficient in managing containers.
+
+Overall, Docker revolutionized the way applications are developed, shipped, and deployed by providing a standardized platform for containerization. Its ease of use, portability, and scalability have made it a fundamental tool in modern software development and deployment workflows.
 
 ## Why do you need docker & What can it do?
 Dockerization offers several advantages over traditional approaches such as

@@ -1,5 +1,4 @@
-## Basic Pipeline
-#### Free Style Project Sample Test
+### Basic Pipeline Free Style Project Sample Test
 `Execute Basic Bash Scripts`
 ```
 pwd
@@ -32,3 +31,9 @@ If we build this test, we can see action here `sudo tail -f /var/log/nginx/acces
 
 #### GitHub hook trigger for GITScm polling
 <img src="../images/github-huk-trigger.md.png" width="500">
+
+#### Poll SCM
+- A cronjob, at every cron event jenkins scans the github repository if anything changed there.
+- If nothing new is committed, jenkins doesn't do anything
+- If new data is pushed in the repo, jenkins pulls the github code
+- And do whatever we instruct it to do
